@@ -20,7 +20,6 @@ def decorator_function(func):
                     'Ш', 'ш', 'Щ', 'щ', 'Ы', 'ы', 'Э', 'э', 'Ю', 'ю', 'Я', 'я']
         print("Enter text: ")
         result = str()
-
         len_st = len(st)
         for i in range(0, len_st):
             if st[i] in alphabet:
@@ -28,10 +27,9 @@ def decorator_function(func):
             else:
                 simb = st[i]
             result = result + simb
-
         print(result)
-
     return to_lat
+
 
     @decorator_function
     def func(st):
@@ -41,14 +39,11 @@ def decorator_function(func):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-
     st = str(input())
 
 
     @decorator_function
     def func(st):
         print(st)
-
-
     func(st)
 
